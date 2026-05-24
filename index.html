@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Inicio - Mat Shop</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.png" alt="Logo Mat Shop" width="200">
+        <h1>Mat Shop</h1>
+        <h2>Tienda Multirubro</h2>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__lista">
+            <li class="nav__item"><a class="nav__enlace" href="#">Inicio</a></li>
+            <li class="nav__item"><a class="nav__enlace" href="./paginas/categorias.html">Categorías</a></li>
+            <li class="nav__item"><a class="nav__enlace" href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Productos Destacados</h2>
+        <p>Cremas, perfumes y libros.
+            <strong>Calidad Garantizada</strong>
+        </p>
+
+        <section>
+            <h3>Libros : <em>Querida YO</em></h3>
+            <img src="./imagenes/queridayo2.png" alt="Libro Querida YO" width="200"> 
+            
+            <p><strong>Video de Referencia</strong></p>
+            <video autoplay loop muted width="200">
+                <source src="./videos/Querida YO.mp4" type="video/mp4">
+                <track src="./subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+            </video>
+        </section>
+
+        <section>
+            <h3>Nuestras Categorías</h3>
+            <dl>
+                <dt>Cremas</dt>
+                <dd>Cremas hidratantes y nutritivas para el cuidado de la piel.</dd>
+                <dt>Perfumes</dt>
+                <dd>Fragancias nacionales e importadas para toda ocasión.</dd>
+                <dt>Libros</dt>
+                <dd>Títulos de distintos géneros y temáticas.</dd>
+                <dt>Peluches</dt>
+                <dd>Peluches de distintos tamaños y personajes para todas las edades.</dd>
+                <dt>Mochilas</dt>
+                <dd>Mochilas resistentes y cómodas para el día a día.</dd>
+            </dl>
+        </section>
+
+        <section class="resenas">
+            <h2>Reseñas de nuestros clientes</h2>
+
+            <section class="card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Carlos R.</h3>
+                <p>"Los libros llegaron rapido y en perfecto estado. Muy buena atencion."</p>   
+            </section>
+        
+
+            <section class="card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Maria L.</h3>
+                <p>"Me encanto el libro <strong>Querida Yo</strong>. Es una lectura muy inspiradora."</p>
+            </section>
+
+            <section class="card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Jorge M.</h3>
+                <p>"Excelente servicio y productos de calidad. Recomiendo Mat Shop."</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Mat Shop</p>
+        <p>Contacto: matshop@email.com</p>
+        
+        <a href="https://www.instagram.com" target="_blank" class="footer__red-social"> 
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" class="footer__red-social">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </footer>
+
+</body>
+</html>

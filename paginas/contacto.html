@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contacto - MatShop</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <img src="../imagenes/logo.png" alt="Logo Mat Shop" width="200">
+        <h1>Mat Shop</h1>
+        <h2>Tienda Multirubro</h2>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__lista">
+            <li class="nav__item"><a class="nav__enlace" href="../index.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__enlace" href="./categorias.html">Categorías</a></li>
+            <li class="nav__item"><a class="nav__enlace" href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte!</p>
+
+        <form action="https://formspree.io/f/xjgllplb" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" 
+            placeholder="Ej: Maria Garcia" required>
+            <br>
+
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" 
+            placeholder="Ej: maria.garcia@email.com" required>
+            <br>
+
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" required>
+                <option value="">-- Selecciona una categoria</option>
+                <option value="cremas">Cremas</option>
+                <option value="perfumes">Perfumes</option>
+                <option value="libros">Libros</option>
+                <option value="peluches">Peluches</option>
+                <option value="mochilas">Mochilas</option>
+            </select>
+            <br>
+
+            <label for="mensaje">Tu consulta:</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" rows="4" 
+            minlength="10" maxlength="500" 
+            placeholder="Escribinos tu consulta sobre el producto..." required></textarea>
+            <br>
+
+            <button type="submit">Enviar Consulta</button>
+
+        </form>
+
+        <h2>Consultas Respondidas</h2>
+        <table border="1">
+            <caption>Historial de consultas de clientes</caption>
+
+            <thead>
+                <tr>
+                    <th colspan="4">Consultas Respondidas</th>
+                </tr>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Consulta</th>
+                    <th>Categoria</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Laura M.</td>
+                    <td>Las cremas tiene parabenos?</td>
+                    <td>Cremas</td>
+                    <td>Respondida</td>
+                </tr>
+                <tr>
+                    <td>Carlos R.</td>
+                    <td>Los peluches son importados?</td>
+                    <td>Peluches</td>
+                    <td>Pendiente</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2025 Mat Shop</p>
+        <p>Contacto: matshop@email.com</p>
+        
+        <a href="https://www.instagram.com" target="_blank" class="footer__red-social"> 
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com" target="_blank" class="footer__red-social">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+    </footer>
+</body>
+</html>

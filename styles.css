@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: Outfit, sans-serif;
+}
+
+p, li, dl, dt, dd, td, label {
+    font-family: Nunito, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom, #8c52ff, #5ce1e6);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #8c52ff;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* NAVEGACIÓN */
+
+.nav {
+    background-color: #5ce1e6;
+}
+
+.nav__lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.nav__enlace {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__red-social {
+    color: white;
+    margin: 10px 50px;
+    font-size: 24px;
+}
+
+/* PRODUCTOS */
+
+.productos {
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #5ce1e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 280px;
+}
+
+.tarjeta__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+.tarjeta__nombre {
+    font-family: Outfit, sans-serif;
+    color: #8c52ff;
+    margin-top: 12px;
+}
+
+.tarjeta__descripcion {
+    font-family: Nunito, Sans-serif;
+    font-size: 15px;
+    color: #666666;
+    margin-top: 8px;
+}
+
+.tarjeta__precio {
+    font-family: Outfit, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #5ce1e6;
+    margin-top: 10px;
+}
+
+.tarjeta__boton {
+    background-color: #8c52ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* RESEÑAS */
+
+.resenas {
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.resenas h2 {
+    grid-column: 1 / 4;
+    text-align: center;
+    font-family: Outfit, sans-serif;
+    color: #8c52ff;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #5ce1e6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 40px;
+    color: #8c52ff;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-family: Outfit, sans-serif;
+    color: #8c52ff;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-family: Nunito, sans-serif;
+    font-size: 15px;
+    color: #666666;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .resenas {
+        grid-template-columns: 1fr;
+    }
+
+    .resenas h2 {
+        grid-column: 1 / 2;
+    }
+
+    form {
+        padding: 12px;
+    }
+
+    input, textarea, select {
+        width: 100%;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #8c52ff;
+        outline: none;
+        transition: border-color 0.3s ease;
+    }
+
+}
